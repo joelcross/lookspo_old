@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Lookspo",
+    "slug": "lookspo",
+    "version": "1.0.0",
+    "sdkVersion": "48.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "77ef9ba6-3644-46f7-8aac-c2c4ed46e641"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.joeldcross.lookspo",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    }
+  }
+}

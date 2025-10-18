@@ -1,0 +1,7 @@
+node_modules
+.expo
+.expo-shared
+.env
+.env.local
+npm-debug.log
+web-build

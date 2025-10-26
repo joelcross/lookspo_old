@@ -52,7 +52,7 @@ export default function HomeScreen({ navigation }: any) {
             <PostCard
               key={post.id}
               post={post}
-              username={user.username}
+              user={user}
               onLike={() => handleLike(post.id)}
               onSave={() => handleSave(post.id)}
             />

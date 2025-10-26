@@ -4,7 +4,7 @@ import { demoUsers } from "../data/seed";
 import PostCard from "../components/PostCard";
 
 export default function ProfileScreen({ route, navigation }: any) {
-  const isOther = route.params?.userId && route.params.userId !== "u1";
+  const isOther = route.params?.userId && route.params.userId !== 1;
   const user = demoUsers[0];
 
   return (
@@ -56,9 +56,9 @@ export default function ProfileScreen({ route, navigation }: any) {
             id: "p1",
             image_url: "https://picsum.photos/800/1200?random=1",
             caption: "Demo",
-            user_id: "u1",
+            user_id: 1,
           }}
-          username={user.username}
+          user={user}
           onLike={() => {}}
           onSave={() => {}}
         />

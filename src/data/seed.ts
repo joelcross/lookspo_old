@@ -2,14 +2,14 @@ import type { Post, User } from "../types";
 
 export const demoUsers: User[] = [
   {
-    id: "u1",
+    id: 1,
     username: "noirmoth",
     name: "Noir Moth",
     bio: "Avant-garde wardrobe seeker",
     avatar_url: "",
   },
   {
-    id: "u2",
+    id: 2,
     username: "pillowghost",
     name: "Pillow Ghost",
     bio: "Soft shapes, loud textures",
@@ -22,7 +22,7 @@ export const demoPosts: Post[] = [
     id: "p1",
     image_url: "https://picsum.photos/800/1200?random=1",
     caption: "Loose tailoring",
-    user_id: "u1",
+    user_id: 1,
     liked: false,
     saved: false,
   },
@@ -30,7 +30,7 @@ export const demoPosts: Post[] = [
     id: "p2",
     image_url: "https://picsum.photos/800/1200?random=2",
     caption: "Vintage scarf",
-    user_id: "u2",
+    user_id: 2,
     liked: true,
     saved: true,
   },

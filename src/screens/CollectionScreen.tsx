@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, ScrollView } from "react-native";
-import { demoPosts } from "../data/seed";
+import { demoPosts, demoUsers } from "../data/seed";
 import PostCard from "../components/PostCard";
 
 export default function CollectionScreen({ route }: any) {
@@ -12,15 +12,19 @@ export default function CollectionScreen({ route }: any) {
         <Text className="text-xl font-bold">Collection</Text>
       </View>
       <ScrollView>
-        {demoPosts.map((p) => (
-          <PostCard
-            key={p.id}
-            post={p}
-            username={"noirmoth"}
-            onLike={() => {}}
-            onSave={() => {}}
-          />
-        ))}
+        {demoPosts.map((post) => {
+          const user = demoUsers.find((u) => u.id === post.user_id)!;
+
+          return (
+            <PostCard
+              key={post.id}
+              post={post}
+              user={user}
+              onLike={() => {}}
+              onSave={() => {}}
+            />
+          );
+        })}
       </ScrollView>
     </View>
   );

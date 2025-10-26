@@ -5,8 +5,9 @@ import ActivityScreen from "../screens/ActivityScreen";
 import NewPostScreen from "../screens/NewPostScreen";
 import ProfileStack from "./ProfileStack";
 import Icon from "react-native-vector-icons/Feather";
+import type { RootTabParamList } from "./types";
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator<RootTabParamList>();
 
 export default function AppNavigator() {
   return (
